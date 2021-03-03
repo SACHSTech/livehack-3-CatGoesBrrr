@@ -19,17 +19,17 @@ w_count = 0
 print("Enter the wins and losses for your team: ")
 for i in range(6):
   user_results = input("")
-  if user_results == "w" or "W":
+  if user_results == "w" or user_results == "W":
     w_count = w_count + 1
 
 # output results
-if w_count == 5 or 6:
+if w_count == 5 or w_count == 6:
   print("Your team is in Group 1")
 
-elif w_count == 3 or 4:
+elif w_count == 3 or w_count == 4:
   print("Your team is in Group 2")
 
-elif w_count == 1 or 2:
+elif w_count == 1 or w_count == 2:
   print("Your team is in Group 3")
 
 else:
